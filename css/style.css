@@ -139,8 +139,8 @@ body{
     font-size: 1.7rem;
     color: rgb(80, 80, 80);
 }
-.quotes .quote_line p .quote_icon{
-    margin: 2.5rem;
+.quotes .quote_line{
+    margin: 5.75rem 0;
 }
 
 
@@ -379,6 +379,9 @@ form #send{
         font-size: 1rem;
         margin-top: 1rem;
     }
+    .quotes .quote_line {
+        margin: 4.75rem 0px;
+    }
     .footer .footer_row{
         flex-direction: column;
     }
@@ -459,5 +462,8 @@ form #send{
     form .input-field input{
         margin-bottom: 3.5rem;
 
+    }
+    .quotes .quote_line {
+        margin: 4rem 0px;
     }
 }
