@@ -24,18 +24,21 @@
                 <li><a href="#">Objective</a></li>
                 <li><a href="#">Subjective</a></li>
             </ul>
+            <i class="fa fa-bars toggle-icon" id="nav-bar" aria-hidden="true"></i>
+            <i class="fa fa-times toggle-icon" id="nav-close" aria-hidden="true"></i>
         </div>
 
 
 
         <!-- ===================== Slider ===================== -->
         <div class="slider">
-
-            <h1>BEST ONLINE STUDY FOR BIHAR <br> BOARD CLASS 12TH</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maiores voluptatibus tenetur sed libero
-                <br>distinctio, necessitatibus ratione deserunt iste qui vero incidunt. Suscipit consectetur modi.
-            </p>
-            <button><a href="#imp"> Get Start Now</a></button>
+            
+            <div class="slider_content">
+                <h1>BEST ONLINE STUDY FOR BIHAR <br> BOARD CLASS 12TH</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maiores voluptatibus tenetur sed libero<br>distinctio, necessitatibus ratione deserunt iste qui vero incidunt. Suscipit consectetur modi.
+                </p>
+                <button><a href="#imp"> Get Start Now</a></button>
+            </div>
 
         </div>
 
@@ -149,6 +152,26 @@
 
 
 
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $('#nav-bar').on('click', function () {
+                    $('.nav_links').css('left', '0')
+                    $('#nav-close').show();
+                })
+                $('#nav-close').on('click', function () {
+                    $('.nav_links').css('left', '100%')
+                    $('#nav-close').hide();
+                })
+
+
+
+            })
+
+
+        </script>
 
 
 

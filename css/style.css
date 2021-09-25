@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99999;
+    z-index: 99;
 }
 .navigation .logo img{
     height: 100%;
@@ -46,28 +46,47 @@ body{
 .nav_links li a.active{
     color: rgb(214, 24, 24);
 }
+.toggle-icon{
+    font-size: 3rem;
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+#nav-close{
+    position: sticky;
+    right: 50px;
+}
+
 
 /* ================= Slider ================= */
 .slider{
-    background: url('../img/slider.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/banner.jpg') no-repeat;
     width: 100%;
-    height: 35rem;
+    height: auto;
+    height: calc(100vh - 20vh);
     text-align: center;
-    z-index: -1;
+    font-size: 2rem;
+    z-index: -111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.slider h1{
-    padding-top: 7.5rem;
+.slider .slider_content{
+    width: 100%;
+}
+.slider_content h1{
+    /* padding-top: 1.2em; */
     text-align: center;
     color: #0c2155;
-    font-size: 3.1rem;
+    font-size: 3rem;
     font-family: 'Bree Serif', serif;
 }
-.slider p{
+.slider_content p{
     color: gray;
-    padding-top: 1.25;
+    padding-top: 1.25rem;
+    font-size: 1rem;
 }
-.slider button{
+.slider_content button{
     background: #0c2155;
     color: #fff;
     font-size: 1.4rem;
@@ -77,7 +96,7 @@ body{
     border-radius: 0.43rem;
     cursor: pointer;
 }
-.slider button a{
+.slider .slider_content button a{
     text-decoration: none;
     color: #fff;
     transition: all 2s ease;
@@ -260,7 +279,10 @@ form #send{
 
 @media screen and (max-width: 1120px) {
     html{
-        font-size: 80%;
+        font-size: 90%;
+    }
+    .slider_content p{
+        font-size: 1.2rem;
     }
 }
 
@@ -292,5 +314,46 @@ form #send{
 
 
 @media screen and (max-width: 700px) {
-    
+    html{
+        font-size: 80%;
+    }
+    .navigation{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: #fff;
+    }
+    .nav_links{
+        position: fixed;
+        left: 100%;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        background: #0c2155;
+        z-index: 999;
+        transition: all 0.4s ease-in-out;
+    }
+    .nav_links li{
+        display: block;
+        width: 100%;
+    }
+    .nav_links li:first-child{
+        margin-top: 5rem;
+    }
+    .nav_links li a{
+        display: block;
+        width: 100%;
+        color: #fff;
+        padding: 20px 20px;
+        z-index: 9999999999;
+    }
+    #nav-bar{
+        display: block;
+    }
+    #nav-close{
+        display: none;
+        z-index: 99999;
+        color: #fff;
+    }
 }
