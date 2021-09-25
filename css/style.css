@@ -24,9 +24,13 @@ body{
     align-items: center;
     z-index: 99;
 }
+.navigation .logo{
+    width: 120px;
+    height: 100%;
+}
 .navigation .logo img{
     height: 100%;
-    width: 13rem;
+    width: 100%;
 }
 .navigation ul.nav_links{
     display: flex;
@@ -49,12 +53,12 @@ body{
 .toggle-icon{
     font-size: 3rem;
     position: absolute;
-    right: 50px;
+    right: 30px;
     display: none;
 }
 #nav-close{
     position: sticky;
-    right: 50px;
+    right: 30px;
 }
 
 
@@ -322,6 +326,7 @@ form #send{
         top: 0;
         left: 0;
         background: #fff;
+        height: 5.5rem;
     }
     .nav_links{
         position: fixed;
