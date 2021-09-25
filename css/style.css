@@ -25,7 +25,7 @@ body{
     z-index: 99;
 }
 .navigation .logo{
-    width: 120px;
+    width: 180px;
     height: 100%;
 }
 .navigation .logo img{
@@ -67,16 +67,17 @@ body{
     background: url('../img/banner.jpg') no-repeat;
     width: 100%;
     height: auto;
-    height: calc(100vh - 20vh);
     text-align: center;
     font-size: 2rem;
     z-index: -111;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8rem 0rem;
 }
 .slider .slider_content{
     width: 100%;
+    height: 100%;
 }
 .slider_content h1{
     /* padding-top: 1.2em; */
@@ -87,7 +88,7 @@ body{
 }
 .slider_content p{
     color: gray;
-    padding-top: 1.25rem;
+    padding: 1.25rem 10rem 0;
     font-size: 1rem;
 }
 .slider_content button{
@@ -310,14 +311,14 @@ form #send{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 788px) {
     html{
         font-size: 63%;
     }
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     html{
         font-size: 80%;
     }
@@ -327,6 +328,9 @@ form #send{
         left: 0;
         background: #fff;
         height: 5.5rem;
+    }
+    .navigation .logo{
+        width: 120px;
     }
     .nav_links{
         position: fixed;
@@ -360,5 +364,49 @@ form #send{
         display: none;
         z-index: 99999;
         color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 670px) {
+    html{
+        font-size: 70%;
+    }
+    .slider_content h1{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+    html{
+        font-size: 65%;
+    }
+    .slider_content h1{
+        font-size: 2.5rem;
+    }
+    .slider_content p{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 472px) {
+    html{
+        font-size: 70%;
+    }
+    .slider{
+        padding: 1rem 0rem;
+    }
+    .slider_content h1{
+        font-size: 2rem;
+    }
+    .slider_content p{
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+    .slider_content button{
+        font-size: 1rem;
+        margin-top: 0.3rem;
     }
 }
