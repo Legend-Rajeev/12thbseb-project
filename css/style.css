@@ -154,6 +154,7 @@ body{
 .imp_topic h1{
     color: #0c2155;
     font-size: 2.8rem;
+    font-weight: 750;
     padding-top: 0.625rem;
     font-family: 'Open-Sans', sans-serif;
 }
@@ -169,7 +170,7 @@ body{
     height: auto;
 }
 .imp_content .imp_box_row p{
-    padding: 0.625rem 0;
+    padding: 0.625rem 0.3rem;
     color: rgb(255, 16, 16);
     font-size: 1.4rem;
     font-weight: 800;
@@ -177,16 +178,17 @@ body{
 }
 .imp_content .imp_box_row .drop_imp_box{
     position: relative;
+    display: none;
 }
 .drop_imp_box .drop_imp_links{
     background: #0c2155;
     border-bottom: 0.125rem solid gray;
     padding: 0.3125rem 0;
-    font-size: 1.2rem;
     transition: all 0.4s ease;
 }
 .drop_imp_box .drop_imp_links a{
     display: block;
+    font-size: 1.3rem;
     color: #fff;
     text-decoration: none;
 }
