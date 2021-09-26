@@ -284,7 +284,65 @@ form #send{
     text-align: center;
 }
 
+/* ===================== Question - Topics ======================================= */
+.questions-topic{
+    width: 100%;
+    height: auto;
 
+}
+.questions-topic .questions-banner{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.questions-topic .questions-banner img{
+    width: 100%;
+    height: 100%;
+}
+.questions-topic .questions-test-content{
+    padding: 1rem;
+}
+.questions-test-content h2{
+    color: #0c2155;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+.questions-test-content .chapter-heading{
+    color: red;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 0.5rem 0rem;
+}
+.questions-test-content .question-set{
+    padding: 1rem;
+    border-bottom: 1px solid #0c2155;
+    user-select: none;
+}
+.questions-test-content .question-set:last-child{
+    border: none;
+}
+.questions-test-content .question-set .question{
+    font-size: 1.3rem;
+    color: #0c2155;
+    font-weight: 550;
+}
+.question-options p{
+    padding: 0.7rem 0rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+p.obj-answer{
+    padding: 0.8rem 3rem;
+    background: #0c2155;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 0.3rem;
+    margin-top: 0.4rem;
+}
+
+
+/* ======================================= Make Responsive Website =================================== */
 
 @media screen and (max-width: 1120px) {
     html{
@@ -432,6 +490,9 @@ form #send{
     .slider_content p{
         font-size: 1rem;
     }
+    .questions-topic .questions-banner{
+        height: 300px;
+    }
 }
 
 
@@ -453,6 +514,10 @@ form #send{
         font-size: 1rem;
         margin: 0.5rem 0rem;
     }
+    .footer_row .details .social_media i{
+        font-size: 2.4rem;    
+        
+    }
     .footer .footer_row .contact_form{
         width: 100%;
         padding-top: 3rem;
@@ -463,9 +528,13 @@ form #send{
     }
     form .input-field input{
         margin-bottom: 3.5rem;
+        font-size: 1.3rem;
 
     }
     .quotes .quote_line {
         margin: 4rem 0px;
+    }
+    .questions-topic .questions-banner{
+        height: 200px;
     }
 }
