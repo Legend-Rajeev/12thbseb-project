@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objective</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- =============== Navigation Bar ================ -->
+        <div class="navigation">
+            <div class="logo"><img src="img/transparent.png" alt=""></div>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Model-Paper</a></li>
+                <li><a href="#">Online-Test</a></li>
+                <li><a href="questions.html">Question-Bank</a></li>
+                <li><a href="objective.html">Objective</a></li>
+                <li><a href="#">Subjective</a></li>
+            </ul>
+            <i class="fa fa-bars toggle-icon" id="nav-bar" aria-hidden="true"></i>
+            <i class="fa fa-times toggle-icon" id="nav-close" aria-hidden="true"></i>
+        </div>
+
+
+        <!-- ==================== Objective Chapter Content ===================== -->
+
+        <div class="objective-content">
+            <div class="ver_line"></div>
+            <div class="hor_line"></div>
+            <div class="objective_heading">GEOGRAPHY भूगोल Objective Questions</div>
+
+            <div class="objective-subject-content">
+                <div class="table-content">
+                    <div class="table">
+                        <div class="table-heading">GEOGRAPHY भूगोल ( Objective Questions ) </div>
+
+                        <div class="table-data"><a href="#"> Chapter 1 : जनसंख्या: वितरण, घनत्व, वृद्धि और संघटन </a></div>
+                        <div class="table-data"><a href="#"> Chapter 2 : प्रवास: प्रकार, कारण और परिणाम </a></div>
+                        <div class="table-data"><a href="#"> Chapter 3 : मानव विकास </a></div>
+                        <div class="table-data"><a href="#"> Chapter 4 : मानव बस्तियाँ </a></div>
+                        <div class="table-data"><a href="#"> Chapter 5 : भूसंसाधन तथा कृषि </a></div>
+                        <div class="table-data"><a href="#"> Chapter 6 : जल-संसाधन </a></div>
+                        <div class="table-data"><a href="#"> Chapter 7 : खनिज तथा ऊर्जा संसाधन </a></div>
+                        <div class="table-data"><a href="#"> Chapter 8 : निर्माण उद्योग </a></div>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =========================== Footer ========================= -->
+        <div class="footer">
+            <div class="ver_line"></div>
+            <div class="hor_line"></div>
+            <div class="footer_row">
+                <div class="details">
+                    <h1>Let's Talk</h1>
+                    <h2>22rajeev22@gmail.com</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit.
+                        Quo minima, illo amet quam ipsa incidunt<br>
+                        perferendis id exercitationem laboriosam repellendus.</p>
+                    <div class="social_media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Your Message">
+                        </div>
+                        <button type="submit" id="send">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div id="copyright">&#169; Copyright 2022 | www.12thbseb.com </div>
+
+
+
+
+
+
+
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $('#nav-bar').on('click', function () {
+                    $('.nav_links').css('left', '0')
+                    $('#nav-close').show();
+                })
+                $('#nav-close').on('click', function () {
+                    $('.nav_links').css('left', '100%')
+                    $('#nav-close').hide();
+                })
+
+                // $('.imp_box_row').on('click', function () {
+                //     $(this).click(function(){
+                //         $('.drop_imp_box').toggle();
+                //     })
+                // })
+
+
+                $(".imp_box_row").click(function () {
+                    $(".drop_imp_box", this).slideToggle();
+                });
+
+
+            })
+
+
+        </script>
+
+</body>
+
+</html>

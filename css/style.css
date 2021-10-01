@@ -7,6 +7,13 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+:root{
+    --first-color: #0c2155;
+    --second-color: rgb(236, 166, 35);
+    --third-color: rgb(101, 101, 101);
+    --fourth-color: rgb(194, 0, 0);
+    --fifth-color: rgb(223, 223, 223);
+}
 body{
 
 
@@ -40,7 +47,7 @@ body{
 }
 .nav_links li a{
     text-decoration: none;
-    color: rgb(59, 59, 59);
+    color: var(--third-color);
     padding: 0 0 0 2.5rem;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
@@ -48,7 +55,7 @@ body{
 }
 .nav_links li a:hover,
 .nav_links li a.active{
-    color: rgb(214, 24, 24);
+    color: var(--fourth-color);
 }
 .toggle-icon{
     font-size: 3rem;
@@ -82,18 +89,18 @@ body{
 .slider_content h1{
     /* padding-top: 1.2em; */
     text-align: center;
-    color: #0c2155;
+    color: var(--first-color);
     font-size: 3rem;
     font-family: 'Bree Serif', serif;
 }
 .slider_content p{
-    color: rgb(49, 49, 49);
+    color: rgb(189, 189, 189);
     padding: 1.25rem 10rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: italic;
 }
 .slider_content button{
-    background: #0c2155;
+    background: var(--first-color);
     color: #fff;
     font-size: 1.4rem;
     margin-top: 2.5rem;
@@ -112,23 +119,23 @@ body{
 /* ==================== quotes ================== */
 .quotes{
     height: 26.8rem;
-    background: rgb(221, 221, 221);
+    background: var(--fifth-color);
     padding: 0 2.5rem;
 }
 .ver_line{
     width: 0.3125rem;
     height: 2.5rem;
-    background: rgb(236, 166, 35);
+    background: var(--second-color);
     margin: 0 auto;
 }
 .hor_line{
     width: 3.75rem;
     height: 0.3125rem;
-    background: rgb(236, 166, 35);
+    background: var(--second-color);
     margin: 2.5rem 0 0 0;
 }
-.quotes h1{
-    color: #0c2155;
+.quotes h1,.objective_heading{
+    color: var(--first-color);
     font-size: 2.8rem;
 }
 .quotes .quote_line{
@@ -137,7 +144,7 @@ body{
 .quotes .quote_line p{
     text-align: center;
     font-size: 1.7rem;
-    color: rgb(80, 80, 80);
+    color: var(--third-color);
 }
 .quotes .quote_line{
     margin: 5.75rem 0;
@@ -152,7 +159,7 @@ body{
     /* background: indianred; */
 }
 .imp_topic h1{
-    color: #0c2155;
+    color: var(--first-color);
     font-size: 2.8rem;
     font-weight: 750;
     padding-top: 0.625rem;
@@ -163,7 +170,7 @@ body{
     margin: 2.5rem auto;
 }
 .imp_topic .imp_content .imp_box_row{
-    background: rgb(221, 221, 221);
+    background: var(--fifth-color);
     text-align: center;
     margin-bottom: 0.15rem;
     cursor: pointer;
@@ -171,7 +178,7 @@ body{
 }
 .imp_content .imp_box_row p{
     padding: 0.625rem 0.3rem;
-    color: rgb(255, 16, 16);
+    color: var(--fourth-color);
     font-size: 1.4rem;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
@@ -181,8 +188,8 @@ body{
     display: none;
 }
 .drop_imp_box .drop_imp_links{
-    background: #0c2155;
-    border-bottom: 0.125rem solid gray;
+    background: var(--first-color);
+    border-bottom: 0.125rem solid var(--third-color);
     padding: 0.3125rem 0;
     transition: all 0.4s ease;
 }
@@ -193,7 +200,7 @@ body{
     text-decoration: none;
 }
 .drop_imp_box .drop_imp_links:hover{
-    background: #081536;
+    background: var(--first-color);
 }
 
 
@@ -212,23 +219,23 @@ body{
     width: 36%;
 }
 .footer_row .details h1{
-    color: #0c2155;
+    color: var(--first-color);
     font-size: 2.8125rem;
     font-family: 'Ubuntu', sans-serif;
 }
 .footer_row .details h2{
-    color: rgba(236, 166, 35, 0.782);
+    color: var(--second-color);
     padding-top: 3.75rem;
 }
 .footer_row .details p{
     font-size: 1rem;
     padding-top: 1.25rem;
     font-style: italic;
-    color: rgb(118, 118, 118);
+    color: var(--third-color);
 }
 .footer_row .details .social_media i{
     font-size: 1.875rem;    
-    color: rgb(125, 125, 125);
+    color: var(--third-color);
     padding: 0px 0.625rem;
     margin: 3.125rem 0.4375rem 0 0;
     cursor: pointer;
@@ -239,7 +246,7 @@ body{
 }
 .footer_row .details .social_media i:hover{
     /* color: rgba(236, 166, 35, 0.782); */
-    color: #0c2155;
+    color: var(--first-color);
 }
 .footer .footer_row .contact_form{
     width: calc(100% - 36%);
@@ -258,8 +265,8 @@ form .input-field input{
     border: none;
     outline: none;
     background: #1B1B1B;
-    color: rgb(193, 193, 193);
-    border-bottom: 0.125rem solid gray;
+    color: var(--fifth-color);
+    border-bottom: 0.125rem solid var(--fifth-color);
     width: 100%;
     margin-right: 1.25rem;
     padding: 0.625rem 0px;
@@ -267,7 +274,7 @@ form .input-field input{
 }
 form #send{
     padding: 0.9375rem 3.75rem;
-    background: #0c2155;
+    background: var(--first-color);
     color: #fff;
     border: none;
     outline: none;
@@ -278,17 +285,80 @@ form #send{
 
 #copyright{
     font-size: 1.2rem;
-    color: gray;
-    background: black;
+    color: var(--third-color);
+    background: rgb(0, 0, 0);
     padding: 0.3125rem 0px;
     text-align: center;
 }
+
+
+/* ======================= Subject List ========================== */
+
+.objective-content{
+    padding: 0 2.5rem;
+    background-color: var(--fifth-color);
+}
+.objective-subject-content{
+    width: 100%;
+    padding: 2rem 5rem;
+}
+.objective-subject-content .table{
+    background: var(--second-color);
+    width: 100%;
+    border: none;
+    border-radius: 0.6rem;
+}
+.objective-subject-content .table .table-heading{
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    background: var(--first-color);
+    text-align: center;
+}
+.objective-subject-content .table .table-data{
+    background: rgb(238, 254, 255);
+    padding: 0.5rem 2rem;
+}
+.objective-subject-content .table .table-data:hover > a{
+    color: var(--fourth-color);
+}
+.objective-subject-content .table .table-data a{
+    width: 100%;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.objective-subject-content .table .table-data:nth-child(2n){
+    background: rgb(220, 245, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===================== Question - Topics ======================================= */
 .questions-topic{
     width: 100%;
     height: auto;
-
+    
 }
 .questions-topic .questions-banner{
     width: 100%;
@@ -300,22 +370,29 @@ form #send{
     height: 100%;
 }
 .questions-topic .questions-test-content{
-    padding: 1rem;
+    padding: 0 2.5rem;
+    width: 100%;
+}
+.questions-left-content{
+    width: 70%;
+}
+.questions-right-content{
+    width: 30%;
 }
 .questions-test-content h2{
-    color: #0c2155;
+    color: var(--first-color);
     font-size: 2rem;
     padding: 1rem 0rem;
 }
 .questions-test-content .chapter-heading{
-    color: red;
+    color: var(--fourth-color);
     font-size: 1.7rem;
     font-weight: 600;
     padding: 0.5rem 0rem;
 }
 .questions-test-content .question-set{
     padding: 1rem;
-    border-bottom: 1px solid #0c2155;
+    /* border-bottom: 1px solid #0c2155; */
     user-select: none;
 }
 .questions-test-content .question-set:last-child{
@@ -323,7 +400,7 @@ form #send{
 }
 .questions-test-content .question-set .question{
     font-size: 1.3rem;
-    color: #0c2155;
+    color: var(--first-color);
     font-weight: 550;
 }
 .question-options p{
@@ -333,7 +410,7 @@ form #send{
 }
 p.obj-answer{
     padding: 0.8rem 3rem;
-    background: #0c2155;
+    background: var(--first-color);
     display: inline-block;
     color: rgb(255, 255, 255);
     border: 0;
@@ -357,7 +434,7 @@ p.obj-answer{
 
 
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 960px) {
     html{
         font-size: 75%;
     }
@@ -401,7 +478,7 @@ p.obj-answer{
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        background: #0c2155;
+        background: var(--first-color);
         z-index: 999;
         transition: all 0.4s ease-in-out;
     }
@@ -451,6 +528,14 @@ p.obj-answer{
     .footer .footer_row .contact_form{
         width: 100%;
         padding-top: 5rem;
+    }
+    .questions-left-content{
+        width: 100%;
+        display: block;
+    }
+    .questions-right-content{
+        width: 100%;
+        display: block;
     }
 
 
@@ -534,7 +619,26 @@ p.obj-answer{
     .quotes .quote_line {
         margin: 4rem 0px;
     }
-    .questions-topic .questions-banner{
-        height: 200px;
+    .questions-topic .questions-test-content{
+        padding: 0rem 0.5rem;
     }
+    .questions-topic .questions-banner{
+        height: 12rem;
+    }
+
+
+    .objective-subject-content{
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+
+    .objective-subject-content .table{
+        width: 100%;
+    }
+    .objective-subject-content .table-data a{
+        font-size: 1.5rem;
+        padding: 0.8rem 0rem;
+    }
+
+
 }
